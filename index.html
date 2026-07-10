@@ -3,139 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KI27 Radio | صوت المعرفة والترفيه</title>
-
+    <title>إذاعة KI28 | بث مباشر</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 </head>
-
 <body>
-<nav class="navbar">
 
-<div class="logo">
-🎙️ KI27 RADIO
-</div>
+    <div class="container">
+        <div class="live-badge">
+            <span></span> مباشر
+        </div>
 
-<ul>
+        <div class="logo-area">
+            <div class="logo-circle" id="logoCircle">
+                <i class="fa-solid fa-radio"></i>
+            </div>
+        </div>
 
-<li><a href="#">الرئيسية</a></li>
+        <h1>إذاعة KI28</h1>
+        <p id="status-text">اضغط على الزر بالأسفل للاستماع للبث المباشر</p>
 
-<li><a href="#">البث المباشر</a></li>
+        <div class="waves" id="waveContainer">
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+        </div>
 
-<li><a href="#">البرامج</a></li>
+        <button class="play-btn" id="playBtn">
+            <i class="fa-solid fa-play" id="btnIcon"></i>
+            <span id="btnText">استمع الآن</span>
+        </button>
 
-<li><a href="#">الأخبار</a></li>
+        <div class="volume-container">
+            <i class="fa-solid fa-volume-high" style="color: #8a99ad;"></i>
+            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+        </div>
+    </div>
 
-<li><a href="#">اتصل بنا</a></li>
-
-</ul>
-
-</nav>
-<header>
-
-<h1>🎙️ KI27 Radio</h1>
-
-<p>صوت المعرفة والترفيه</p>
-
-<div class="info">
-    <p id="date"></p>
-    <p id="time"></p>
-</div>
-
-<a href="https://ki27radio.mixlr.com/" target="_blank" class="listen-btn">
-🎧 استمع الآن
-</a>
-
-</header>
-
-<section class="live">
-
-<h2>📻 البث المباشر</h2>
-
-<p>
-اضغط على زر "استمع الآن" للاستماع إلى البث المباشر عبر Mixlr.
-</p>
-
-</section>
-
-<section class="news">
-
-<h2>📰 آخر الأخبار</h2>
-
-<div class="card">
-قريبًا سيتم عرض آخر أخبار الإذاعة هنا.
-</div>
-
-</section>
-
-<section class="schedule">
-
-<h2>📅 جدول البرامج</h2>
-
-<div class="card">
-
-08:00 صباحًا — الأخبار
-
-</div>
-
-<div class="card">
-
-10:00 صباحًا — التقنية
-
-</div>
-
-<div class="card">
-
-04:00 مساءً — برامج متنوعة
-
-</div>
-
-<div class="card">
-
-08:00 مساءً — البث المباشر
-
-</div>
-
-</section>
-
-<section class="about">
-
-<h2>👤 من نحن</h2>
-
-<p>
-
-KI27 Radio إذاعة عربية تهدف إلى نشر المعرفة والترفيه والتقنية والثقافة.
-
-</p>
-
-</section>
-
-<section class="contact">
-
-<h2>📞 تواصل معنا</h2>
-
-<p>
-
-البريد الإلكتروني:
-
-<br>
-
-ki27radio@gmail.com
-
-</p>
-
-</section>
-
-<footer>
-
-© 2026 KI27 Radio
-
-</footer>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
