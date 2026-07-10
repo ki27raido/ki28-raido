@@ -79,3 +79,89 @@ footer{
 #date,#time{
     margin:5px 0;
 }
+
+/* ===========================
+   شريط التنقل
+=========================== */
+
+.navbar{
+
+background:#04111f;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:15px 20px;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+box-shadow:0 3px 10px rgba(0,0,0,.4);
+
+}
+
+.logo{
+
+color:#FFD700;
+
+font-size:24px;
+
+font-weight:bold;
+
+}
+
+.navbar ul{
+
+display:flex;
+
+list-style:none;
+
+gap:20px;
+
+}
+
+.navbar ul li a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.navbar ul li a:hover{
+
+color:#FFD700;
+
+}
+
+/* الهاتف */
+
+@media(max-width:768px){
+
+.navbar{
+
+flex-direction:column;
+
+}
+
+.navbar ul{
+
+flex-direction:column;
+
+text-align:center;
+
+margin-top:15px;
+
+}
+
+}
