@@ -1,48 +1,104 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>إذاعة KI28 | بث مباشر</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>راديو KI28 | بث مباشر</title>
+<meta name="description" content="راديو KI28 — إذاعة أونلاين، بث مباشر على مدار الساعة">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <div class="live-badge">
-            <span></span> مباشر
-        </div>
+<header>
+  <div class="nav wrap">
+    <div class="brand">راديو <span>KI28</span></div>
+    <div class="live-pill"><span class="dot"></span> بث مباشر الآن</div>
+  </div>
+</header>
 
-        <div class="logo-area">
-            <div class="logo-circle" id="logoCircle">
-                <i class="fa-solid fa-radio"></i>
-            </div>
-        </div>
+<section class="hero">
+  <div class="dial"><span class="r1"></span><span class="r2"></span><span class="r3"></span></div>
+  <div class="wrap">
+    <div class="eyebrow">إذاعة أونلاين</div>
+    <h1>راديو KI28</h1>
+    <p>صوتك في أي مكان. استمع للبث المباشر على مدار الساعة، منوعات، فقرات، وموسيقى تختارها لك.</p>
 
-        <h1>إذاعة KI28</h1>
-        <p id="status-text">اضغط على الزر بالأسفل للاستماع للبث المباشر</p>
-
-        <div class="waves" id="waveContainer">
-            <div class="wave-bar"></div>
-            <div class="wave-bar"></div>
-            <div class="wave-bar"></div>
-            <div class="wave-bar"></div>
-            <div class="wave-bar"></div>
-        </div>
-
-        <button class="play-btn" id="playBtn">
-            <i class="fa-solid fa-play" id="btnIcon"></i>
-            <span id="btnText">استمع الآن</span>
-        </button>
-
-        <div class="volume-container">
-            <i class="fa-solid fa-volume-high" style="color: #8a99ad;"></i>
-            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.1" value="1">
-        </div>
+    <div class="player-card">
+      <button class="play-btn" id="playBtn" aria-label="تشغيل البث المباشر">▶</button>
+      <div class="bars" id="bars"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="station-name">ki27radio — البث المباشر</div>
+      <div class="station-sub" id="statusText">اضغط للاستماع مباشرة عبر Mixlr</div>
     </div>
 
-    <script src="script.js"></script>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://ki27radio.mixlr.com/events/5165193" target="_blank" rel="noopener">استمع على Mixlr</a>
+      <a class="btn btn-ghost" href="#social">تابعنا</a>
+    </div>
+  </div>
+</section>
+
+<section id="listen">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">استمع الآن</span>
+      <h2>البث المباشر</h2>
+    </div>
+    <div class="player-card" style="max-width:640px;padding:16px;">
+      <iframe
+        title="مشغل البث المباشر لراديو KI28"
+        src="https://mixlr.com/users/ki27radio/embed"
+        scrolling="no" frameborder="0" width="100%" height="180"
+        style="border-radius:14px;display:block;">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">من نحن</span>
+      <h2>عن الإذاعة</h2>
+    </div>
+    <p class="about-card">
+      راديو KI28 إذاعة رقمية تبث مباشرة عبر الإنترنت، بنقدّم محتوى متنوع من موسيقى وفقرات حوارية، ونوصل صوتنا لأي مستمع في أي مكان بمجرد ضغطة زر.
+    </p>
+  </div>
+</section>
+
+<section id="social">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">ابقَ على تواصل</span>
+      <h2>تابعنا على السوشيال ميديا</h2>
+    </div>
+    <div class="social-grid">
+      <a class="social-card fb" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>
+        <span>فيسبوك</span>
+      </a>
+      <a class="social-card ig" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.09.28 6.82.11 7.88.06 8.94.01 9.28 0 12 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg>
+        <span>انستقرام</span>
+      </a>
+      <a class="social-card wa" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.13L2 22l5.13-1.53a9.87 9.87 0 0 0 4.91 1.31h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.86 14.14c-.25.7-1.25 1.28-2.03 1.44-.54.11-1.24.2-3.6-.77-2.99-1.24-4.92-4.27-5.07-4.47-.15-.2-1.22-1.62-1.22-3.1 0-1.47.77-2.19 1.05-2.49.27-.29.6-.36.8-.36.2 0 .4 0 .58.01.19.01.44-.07.68.53.25.6.86 2.08.93 2.23.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.44.52-.15.15-.3.31-.13.6.17.3.76 1.26 1.64 2.04 1.13 1 2.08 1.32 2.38 1.47.3.15.47.12.65-.08.17-.2.74-.86.94-1.16.2-.3.4-.25.66-.15.27.1 1.7.8 1.99.95.29.15.48.22.55.34.07.13.07.75-.18 1.45z"/></svg>
+        <span>واتساب</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">راديو <span style="color:var(--amber)">KI28</span></div>
+    <div>© 2026 ki27radio — جميع الحقوق محفوظة</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
