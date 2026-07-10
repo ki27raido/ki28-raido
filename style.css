@@ -1,25 +1,76 @@
-.logo {
-  text-align: center;
-  margin: 20px auto;
+body{
+font-family:Arial, sans-serif;
+background:#07162b;
+color:#fff;
+margin:0;
 }
 
-.logo img {
-  width: 120px;
-  height: 120px;
-  max-width: 35vw;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: auto;
+header{
+text-align:center;
+padding:40px;
+background:#0d2748;
 }
 
-@media (max-width: 600px) {
-  .logo img {
-    width: 90px;
-    height: 90px;
-  }
+h1{
+color:#ffd54f;
+font-size:38px;
+}
 
-  header h1 {
-    font-size: 28px;
-  }
+main{
+padding:10px;
+}
+
+.card{
+background:#123;
+margin:20px;
+padding:20px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+button{
+padding:12px 20px;
+border:none;
+border-radius:8px;
+background:#ffd54f;
+color:#000;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+a{
+text-decoration:none;
+}
+
+ul{
+list-style:none;
+padding:0;
+}
+
+li{
+padding:8px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+color:#ccc;
+}
+
+
+@media(max-width:600px){
+
+h1{
+font-size:28px;
+}
+
+.card{
+margin:10px;
+}
+
 }
